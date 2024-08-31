@@ -1,0 +1,111 @@
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 308px;
+  height: 1086px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 64px;
+    margin-left: 31.45px;
+  }
+
+  &__svgicon {
+    margin-right: 11.45px;
+
+    fill: transparent;
+
+    &.dashboard {
+      fill: black;
+      stroke: black;
+    }
+  }
+
+  &__text {
+    @include text-600;
+    margin-right: 4px;
+
+    font-size: 26px;
+    cursor: pointer;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__version {
+    @include text-500;
+
+    font-size: 10px;
+    color: $link-text-color;
+  }
+
+  &__nav {
+    padding-left: 39px;
+    padding-right: 36px;
+  }
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding: 0px 8px 0px 11px;
+    border-radius: 8px;
+
+    width: 250px;
+    height: 46px;
+    cursor: pointer;
+
+    transition: background-color $cubic-bezier;
+
+    &:hover {
+      background-color: $hover-color-link;
+
+      a {
+        transition: color $cubic-bezier;
+        color: $accent-text-link-color;
+      }
+
+      svg {
+        transition: stroke $cubic-bezier;
+        stroke: #fff;
+      }
+    }
+  }
+
+  &__acive-link {
+    background-color: $accent-color;
+  }
+
+  &__item-link {
+    @include text-500;
+
+    margin-right: auto;
+    color: $link-text-color;
+  }
+}
+
+.employеe {
+  display: flex;
+
+  &__photo {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+    margin-left: 28px;
+  }
+
+  &__name {
+    @include text-500;
+
+    letter-spacing: 0.001em;
+  }
+
+  &__job-title {
+    @include text-400;
+  }
+}

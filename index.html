@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/gridjs/dist/theme/mermaid.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>glivera</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="sidebar__logo">
+          <svg class="sidebar__svgicon dashboard" width="37px" height="37px">
+            <use href="./images/svg_sprite.svg#icon-dashboard"></use>
+          </svg>
+          <p class="sidebar__text">Dashboard</p>
+          <p class="sidebar__version">v.01</p>
+        </div>
+        <section class="section sidebar">
+          <nav class="sidebar__nav">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <svg class="sidebar__svgicon" width="20px" height="20px">
+                  <use xlink:href="./images/svg_sprite.svg#icon-key"></use>
+                </svg>
+                <a class="sidebar__item-link" href="/">Dashboard</a>
+                <svg width="16px" height="16px">
+                  <use href="./images/svg_sprite.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__svgicon" width="20px" height="20px">
+                  <use href="./images/svg_sprite.svg#icon-qube"></use>
+                </svg>
+                <a class="sidebar__item-link" href="/product">Product</a>
+                <svg width="16px" height="16px">
+                  <use href="./images/svg_sprite.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__svgicon" width="20px" height="20px">
+                  <use href="./images/svg_sprite.svg#icon-avatar"></use>
+                </svg>
+                <a class="sidebar__item-link" href="/customer">Customers</a>
+                <svg width="16px" height="16px">
+                  <use href="./images/svg_sprite.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__svgicon" width="20px" height="20px">
+                  <use href="./images/svg_sprite.svg#icon-money"></use>
+                </svg>
+                <a class="sidebar__item-link" href="/income">Incomers</a>
+                <svg width="16px" height="16px">
+                  <use href="./images/svg_sprite.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__svgicon" width="20px" height="20px">
+                  <use href="./images/svg_sprite.svg#icon-persent"></use>
+                </svg>
+                <a class="sidebar__item-link" href="/promote">Promote</a>
+                <svg width="16px" height="16px">
+                  <use href="./images/svg_sprite.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="sidebar__item">
+                <svg class="sidebar__svgicon" width="20px" height="20px">
+                  <use href="./images/svg_sprite.svg#icon-faq"></use>
+                </svg>
+                <a class="sidebar__item-link" href="/help">Help</a>
+                <svg width="16px" height="16px">
+                  <use href="./images/svg_sprite.svg#icon-arrow"></use>
+                </svg>
+              </li>
+            </ul>
+          </nav>
+          <div class="employеe">
+            <img
+              class="employеe__photo"
+              src="./images/employee.png"
+              alt="user avatar"
+            />
+            <span class="employеe__info">
+              <p class="employеe__name">Evano</p>
+              <p class="employеe__job-title">Project Manager</p>
+            </span>
+          </div>
+        </section>
+      </div>
+      <section class="members">
+        <h1 class="members__title">Hello Evano &#128075;</h1>
+        <div class="members__wrapper">
+          <div class="members__container">
+            <div class="members__search">
+              <h2 class="members__subtitle">All customers</h2>
+              <p class="members__text">Active Members</p>
+            </div>
+          </div>
+          <div class="table__wrapper" id="table"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+    <script src="./javascript/activelink.js"></script>
+    <script src="./javascript/grid.js "></script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+.members {
+  width: 100%;
+  padding-top: 41px;
+  padding-left: 71px;
+
+  background-color: #f5f5f5;
+
+  &__title {
+    @include member-title;
+
+    margin-bottom: 64px;
+  }
+
+  &__wrapper {
+    width: 968px;
+    height: 812px;
+    padding: 17px 44px 53px 38px;
+    background-color: #fff;
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__search {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
+  &__subtitle {
+    @include text-600;
+
+    letter-spacing: -0.001em;
+    font-size: 22px;
+  }
+
+  &__text {
+    @include text-400;
+    color: #16c098;
+
+    font-size: 14px;
+    letter-spacing: -0.001em;
+  }
+
+  &__search__wrapper {
+    display: flex;
+    align-items: center;
+
+    width: 216px;
+    height: 38px;
+
+    background-color: #f9fbff;
+
+    border-radius: 10px;
+    border: none;
+  }
+
+  &__searchicon {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
+
+  &__search__input {
+    border: none;
+    background-color: #f9fbff;
+
+    font-size: 12px;
+    letter-spacing: -0.001em;
+  }
+}
+
+.gridjs-pagination {
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+}
+
+.gridjs-wrapper {
+  overflow: hidden;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+}
+
+.gridjs-head {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 40px;
+}
+
+input.gridjs-input {
+  border: none;
+  background-color: #f9fbff;
+  padding: 7px 0px;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.table__status {
+  text-align: center;
+  width: 84px;
+  height: 29px;
+  border-radius: 4px;
+}
+
+.active {
+  padding: 4px 18px;
+  border: 1px solid #00b087;
+  background-color: rgba(22, 192, 152, 0.5);
+  color: #008767;
+}
+
+.inactive {
+  padding: 4px 12px;
+  border: 1px solid #df0404;
+  background-color: #ffc5c5;
+  color: #df0404;
+}
+
+.table__body__td {
+  padding: 20px 0px;
+  height: 29px;
+  border-bottom: 2px solid red;
+}
+
+.table__body__tr__aft {
+  height: 69px;
+}
+
+.gridjs-pagination .gridjs-pages button:first-child {
+  background-color: $pagination-button-color;
+
+  &:hover {
+    transition: background-color $cubic-bezier;
+    background-color: $hover-color-link;
+    cursor: pointer;
+  }
+}
+
+.gridjs-pagination .gridjs-pages button.gridjs-currentPage {
+  background-color: $accent-color;
+  color: $accent-text-link-color;
+}
+
+.gridjs-pagination .gridjs-pages button:hover {
+  transition: background-color $cubic-bezier;
+  transition: color $cubic-bezier;
+  background-color: $hover-color-link;
+  color: $accent-text-link-color;
+}
+
+.gridjs-pagination .gridjs-pages button {
+  margin-right: 5px;
+  background-color: $pagination-button-color;
+  border-radius: 4px;
+}
+
+.gridjs-pagination .gridjs-pages button.gridjs-spread {
+  border: none;
+}
