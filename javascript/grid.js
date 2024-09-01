@@ -1,9 +1,9 @@
 async function getData() {
-  const response = await fetch("../javascript/MOCK_DATA.json");
+  const response = await fetch("./javascript/MOCK_DATA.json");
   const users = await response.json();
 
   const svgForSearch = `<svg class="members__searchicon" width="24px" height="24px">
-                <use href="../images/svg_sprite.svg#icon-search"></use>
+                <use href="./images/svg_sprite.svg#icon-search"></use>
               </svg>`;
 
   new gridjs.Grid({
