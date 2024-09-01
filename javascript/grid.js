@@ -1,5 +1,5 @@
 async function getData() {
-  const response = await fetch("../javascript/MOCK_DATA.json");
+  const response = await fetch("./javascript/MOCK_DATA.json");
   const users = await response.json();
 
   const svgForSearch = `<svg class="members__searchicon" width="24px" height="24px">
